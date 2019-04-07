@@ -12,7 +12,6 @@
 //   7. Menu
 //   8. Thumbnail
 
-
 // 1. Global
 // ---------
 
@@ -21,13 +20,13 @@ $secondary-color: #555555;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #f1f2ed;
+$light-gray: #f1f5f4;
 $medium-gray: #cacaca;
 $dark-gray: #333333;
 $black: #0a0a0a;
 $white: #fefefe;
-$pre-color: #FF6C00;
-$link-color: #FF6C00;
+$pre-color: #ff6c00;
+$link-color: #ff6c00;
 $global-width: 600px;
 $global-width-small: 95%;
 $global-gutter: 55px;
@@ -43,7 +42,7 @@ $global-breakpoint: $global-width + $global-gutter;
 // -------
 
 $grid-column-count: 12;
-$column-padding-bottom:0;
+$column-padding-bottom: 0;
 $container-radius: 0;
 
 // 3. Block Grid
@@ -96,16 +95,16 @@ $stat-font-size: 40px;
 // ---------
 
 $button-padding: (
-  tiny: 4px 8px 4px 8px,
-  small: 5px 10px 5px 10px,
-  default: 6px 26px 6px 26px,
-  large: 10px 20px 10px 20px,
+	tiny: 4px 8px 4px 8px,
+	small: 5px 10px 5px 10px,
+	default: 6px 26px 6px 26px,
+	large: 10px 20px 10px 20px
 );
 $button-font-size: (
-  tiny: 10px,
-  small: 12px,
-  default: 15px,
-  large: 20px,
+	tiny: 10px,
+	small: 12px,
+	default: 15px,
+	large: 20px
 );
 $button-color: $white;
 $button-color-alt: $medium-gray;
@@ -145,4 +144,3 @@ $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
-
