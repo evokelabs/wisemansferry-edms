@@ -18,11 +18,11 @@ p, h1, h3, h4, h5, h6 {
 	width: 22px !important;
 }
 
-p.header-small {
+p.header-small a {
 	font-family: 'Roboto', Arial, sans-serif;
-	font-size: 11px;
+	font-size: 14px;
 	line-height: 16px;
-	color: $secondary-color;
+	color: $link-color;
 }
 
 .header-offset-padding-x {
@@ -80,7 +80,7 @@ h4 {
 	font-family: Proxima-ExtraBold, 'Arial Black', 'Arial Bold', sans-serif;
 }
 
-a {
+a, a:visited {
 	color: $link-color;
 	font-size: 16px;
 }
@@ -117,6 +117,10 @@ a {
 table.button table td a {
 	width: 200px;
 	text-align: center;
+}
+
+.text-increase {
+	font-size: 1.1em;
 }
 
 @media only screen and (max-width: #{$global-breakpoint}) {

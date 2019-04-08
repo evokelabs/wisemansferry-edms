@@ -1,5 +1,5 @@
-p, h1, h3, h4, h5, h6 {
-		color: $primary-color !important;;
+h1, h3, h4, h5{
+	color: $primary-color;
 	font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif;
 	hyphens: none;
 }
@@ -11,7 +11,7 @@ h3 {
 	letter-spacing: 0px;
 }
 
-p {
+p, h6 {
 	color: $secondary-color;
 	line-height: 1.8rem;
 	hyphens: none !important;
@@ -19,8 +19,19 @@ p {
 	letter-spacing: 0px;
 }
 
+h6 {
+	font-size: 16px;
+}
+
 p.small-text-center {
 	hyphens: none !important;
+}
+
+p.header-small a {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	color: $link-color;
 }
 
 .px-left {
@@ -28,10 +39,12 @@ p.small-text-center {
 }
 
 .button a {
+	font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif !important;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	letter-spacing: 3px;
 }
+
 
 .icon-margin {
 	margin-top: 5px;
@@ -50,8 +63,9 @@ table.button table a:hover {
 	border-radius: 30px;
 }
 
-a {
+a, a:visited {
 	color: $link-color;
+	// font-size: 16px;
 }
 
 a[href^='tel'] {
@@ -134,6 +148,11 @@ hr {
 .red-pink {
 	color: #f0575b;
 }
+
+.text-increase {
+	font-size: 1.1em;
+}
+
 
 @media only screen and (max-width: #{$global-breakpoint}) {
 	.banner-large {
