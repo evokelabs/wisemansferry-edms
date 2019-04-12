@@ -14,17 +14,13 @@ h3 {
 p, h6 {
 	color: $secondary-color;
 	line-height: 1.8rem;
-	hyphens: none !important;
-	font-family: 'Open Sans', Arial, sans-serif !important;
+	hyphens: none;
+	font-family: 'Open Sans', Arial, sans-serif;
 	letter-spacing: 0px;
 }
 
 h6 {
 	font-size: 16px;
-}
-
-p.small-text-center {
-	hyphens: none !important;
 }
 
 p.header-small a {
@@ -39,7 +35,7 @@ p.header-small a {
 }
 
 .button a {
-	font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif !important;
+	font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	letter-spacing: 3px;
@@ -59,7 +55,7 @@ table.button table td {
 
 table.button table a:hover {
 	border: 0 solid #fff;
-	background: linear-gradient(to left, #b8284c, #103070) !important;
+	background: linear-gradient(to left, #b8284c, #103070);
 	border-radius: 30px;
 }
 
@@ -122,7 +118,7 @@ hr {
 }
 
 .lightgray {
-	color: #666666 !important;
+	color: #666666;
 }
 
 .lightgray-HR {
@@ -142,7 +138,7 @@ hr {
 }
 
 .charcoal-blue {
-	color: #002d56 !important;
+	color: #002d56;
 }
 
 .red-pink {
@@ -155,15 +151,6 @@ hr {
 
 
 @media only screen and (max-width: #{$global-breakpoint}) {
-	.banner-large {
-		display: none;
-	}
-
-	.banner-small {
-		display: block;
-		width: 100% !important;
-	}
-
 	table.body .columns {
 		padding: 10px !important;
 	}

@@ -5,7 +5,8 @@
 body,
 html,
 .body {
-	background: #f3f3f3 !important;
+	background: $body-background !important;
+	background: $body-background;
 }
 
 .container.header {
