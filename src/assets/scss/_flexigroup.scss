@@ -1,22 +1,32 @@
-h1, h3, h4, h5{
+h1, h2, h3, h4, h5{
 	color: $primary-color;
-	font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif;
+	font-family: ProximaNova-Extrabold, 'Arial Black', 'Arial Bold', sans-serif;
+	font-size: 50px;
+	line-height: 40px;
+	letter-spacing: -2px;
 	hyphens: none;
+}
+
+h1 {
+	font-size: 57px;
+	text-transform: capitalize;
 }
 
 h3 {
 	color: $secondary-color;
 	font-size: $h3-font-size;
-	line-height: 1.8rem;
-	letter-spacing: 0px;
+	line-height: 20px;
+	letter-spacing: -0.5px;
 }
 
 p, h6 {
-	color: $secondary-color;
-	line-height: 1.8rem;
+	color: $dark-gray;
+	line-height: 20px;
 	hyphens: none;
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: ProximaNova-Regular, Arial, sans-serif;
 	letter-spacing: 0px;
+	font-size: 16px;
+
 }
 
 h6 {
@@ -33,14 +43,6 @@ p.header-small a {
 .px-left {
 	padding-left: 30px;
 }
-
-.button a {
-	font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	letter-spacing: 3px;
-}
-
 
 .icon-margin {
 	margin-top: 5px;
@@ -95,11 +97,7 @@ a[href^='tel'] {
 }
 
 .bold {
-	font-family: 'Open Sans Bold', 'Arial Bold', 'Arial Black', sans-serif;
-}
-
-.primary-color {
-	color: $primary-color;
+	font-family: ProximaNova-Extrabold, 'Arial Black', 'Arial Bold', sans-serif;
 }
 
 hr {
@@ -118,8 +116,12 @@ hr {
 	margin: 0;
 }
 
-.lightgray {
-	color: #666666;
+.red-HR {
+	background: $primary-color;
+	border: 0;
+	border-top: 5px solid $primary-color;
+	color: $primary-color;
+	margin: 0;
 }
 
 .lightgray-HR {
@@ -134,16 +136,35 @@ hr {
 	background-color: $light-gray;
 }
 
+.mediumgray-background {
+	background-color: $medium-gray;
+}
+
 .table-width-full {
 	width: 100%;
 }
 
+.primary-color {
+	color: $primary-color;
+}
 .charcoal-blue {
 	color: #002d56;
 }
 
 .red-pink {
 	color: #f0575b;
+}
+
+.black {
+	color: $black;
+}
+
+.darkgray {
+	color: $dark-gray;
+}
+
+.lightgray {
+	color: #666666;
 }
 
 .text-increase {
@@ -167,22 +188,20 @@ hr {
 }
 @media all {
 	@font-face {
-		font-family: Chapeau-Bold;
-		src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
-	}
-	@font-face {
-		font-family: 'Open Sans';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		font-family: ProximaNova-Regular;
+		src: url('http://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/ProximaNova-Regular.otf');
+		
 	}
 
 	@font-face {
-		font-family: 'Open Sans Bold';
-		font-style: normal;
-		font-weight: 700;
-		src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		font-family: ProximaNova-Light;
+		src: url('http://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/ProximaNova-Light.otf');
 	}
+
+	@font-face {
+		font-family: ProximaNova-Extrabold;
+		src: url('http://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/ProximaNova-Extrabold.otf');
+	}
+
+
 }
