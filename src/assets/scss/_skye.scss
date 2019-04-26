@@ -20,7 +20,9 @@ p, h6 {
 }
 
 h6 {
-	font-size: 16px;
+	font-size: 20px;
+	color: $primary-color;
+	font-family: 'Open Sans Bold', Arial Black, Arial Bold, sans-serif;
 }
 
 p.header-small a {
@@ -38,7 +40,6 @@ p.header-small a {
 	font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	letter-spacing: 3px;
 }
 
 
@@ -78,16 +79,10 @@ a[href^='tel'] {
 	color: $link-color;
 }
 
-.black-text p,
-.black-text p small {
-	color: $medium-gray;
+small p{
+	color: $dark-gray;
 	font-size: 14px;
-	line-height: 1.3rem;
-}
-
-.black-text p a,
-.black-text p small a {
-	color: $link-color;
+	line-height: 1.5;
 }
 
 .banner-small {
@@ -108,6 +103,10 @@ hr {
 	border-top: 1px solid $dark-gray;
 	color: $dark-gray;
 	margin: 0;
+}
+
+sup {
+	line-height: 0;
 }
 
 .gray-HR {
@@ -153,7 +152,7 @@ hr {
 
 @media only screen and (max-width: #{$global-breakpoint}) {
 	table.body .columns {
-		padding: 10px !important;
+		padding: 20px !important;
 	}
 
 	img.center {
@@ -163,6 +162,20 @@ hr {
 
 	table.button table td a {
 		font-size: 14px;
+	}
+
+	img {
+		display: inline-block;
+		}
+
+	p {
+		font-size: 16px;
+		line-height: 1.5rem;
+	}
+
+	small p {
+		font-size: 14px;
+		line-height: 1.2rem;
 	}
 }
 @media all {
