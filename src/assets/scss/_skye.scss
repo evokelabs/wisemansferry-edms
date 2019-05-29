@@ -205,29 +205,29 @@ table.button.expand table a, table.button.expanded table a {
 	}
 }
 @media all {
-	@font-face {
-		font-family: Chapeau-Bold;
-		// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Chapeau-Bold.otf');
-		src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
+@font-face {
+	font-family: Chapeau-Bold;
+	src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Chapeau-Bold.otf');
+	//src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
+ }
+
+@font-face {
+	font-family: Effra-Bold;
+	src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Effra-Bold.otf');
+	// src: url('https://training.flexigroup.com.au/resources/Effra-Bold.otf');
 	}
 
-	@font-face {
-		font-family: Effra-Bold;
-		// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Effra-Bold.otf');
-		src: url('https://fleximanila.bitbucket.io/assets/fonts/Effra-Bold.otf');
+@font-face {
+	font-family: Ginger-Bold;
+	src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Bold.otf');
+	// src: url('https://training.flexigroup.com.au/resources/Ginger-Bold.otf');
 	}
 
-	@font-face {
-		font-family: Ginger-Bold;
-		// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Bold.otf');
-		src: url('https://fleximanila.bitbucket.io/assets/fonts/Ginger-Bold.otf');
+@font-face {
+	font-family: Lexia-Bold;
+	src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Lexia-Bold.otf');
+	// src: url('https://training.flexigroup.com.au/resources/Lexia-Bold.otf');
 	}
-
-	@font-face {
-		font-family: Lexia-Bold;
-		src: url('https://fleximanila.bitbucket.io/assets/fonts/Lexia-Bold.otf');
-	}
-
 	@font-face {
 		font-family: ProximaNova-Regular;
 		src: url('uat.shophumm.com.au/themes/custom/humm/fonts/Proxima%20Nova/ProximaNova-Regular.otf');
