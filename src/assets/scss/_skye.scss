@@ -60,11 +60,24 @@ table.button.rounded.small-rounded table td {
 }
 
 
-
 small p{
 	color: $dark-gray;
 	font-size: 14px;
 	line-height: 1.5;
+}
+
+.valign-middle {
+	vertical-align: middle;
+}
+
+.ginger-bold {
+	font-family: 'Ginger-Bold', 'Open Sans Bold', 'Arial Bold', 'Arial Black', sans-serif;
+	font-size: 25px;
+}
+
+.ginger-regular {
+	font-family: 'Ginger-Regular', 'Open Sans', 'Arial', sans-serif;
+	font-size: 25px;
 }
 
 .bold {
@@ -163,6 +176,10 @@ a[href^='tel'] {
 	font-size: 1.1em;
 }
 
+.font-size-20 {
+	font-size: 20px;
+}
+
 .margin-bottom-none {
 	margin-botton: 0px !important;
 	Margin-bottom: 0px !important;
@@ -174,10 +191,19 @@ table.button.expand table a, table.button.expanded table a {
 	width: auto;
 }
 
+img {
+	display: inline-block;
+}
+
+.padding-img {
+	padding: 8px 6px;
+}
+
 
 
 @media only screen and (max-width: #{$global-breakpoint}) {
 	table.body .columns {
+		padding: 20px;
 		padding: 20px !important;
 	}
 
@@ -195,12 +221,20 @@ table.button.expand table a, table.button.expanded table a {
 		}
 
 	p {
+		font-size: 18px;
 		font-size: 18px !important;
 		line-height: 1.2em;
 	}
 
+	p.sub-heading {
+		font-size: 21px;
+		font-size: 21px !important;
+		line-height: 1.2em;
+	}
+
 	small p {
-		font-size: 18px;
+		font-size: 12px;
+		font-size: 12px !important;
 		line-height: 1.2em;
 	}
 }
@@ -222,6 +256,12 @@ table.button.expand table a, table.button.expanded table a {
 	src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Bold.otf');
 	// src: url('https://training.flexigroup.com.au/resources/Ginger-Bold.otf');
 	}
+
+	@font-face {
+		font-family: Ginger-Regular;
+		src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Regular.otf');
+		// src: url('https://training.flexigroup.com.au/resources/Ginger-Regular.otf');
+		}
 
 @font-face {
 	font-family: Lexia-Bold;
