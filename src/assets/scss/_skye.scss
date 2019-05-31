@@ -21,6 +21,12 @@ p, h6 {
 	hyphens: none;
 	font-family: 'Open Sans', Arial, sans-serif;
 	letter-spacing: 0px;
+	margin: 0px;
+	Margin: 0px;
+	margin-bottom: 10px !important;
+	Margin-bottom: 10px !important;
+	margin-bottom: 10px;
+	Margin-bottom: 10px;
 }
 
 h6 {
@@ -34,8 +40,8 @@ table.button.skye-button table td {
 	box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	background-image: linear-gradient(to right, #b8284c, #103070);
-	background: linear-gradient(to right, #b8284c, #103070);
+	background: linear-gradient(to right, #b8284c, #103070) !important;
+	background-image: linear-gradient(to right, #b8284c, #103070) !important;
 }
 
 table.button.once-button table td {
@@ -195,12 +201,6 @@ img {
 	display: inline-block;
 }
 
-.padding-img {
-	padding: 8px 6px;
-}
-
-
-
 @media only screen and (max-width: #{$global-breakpoint}) {
 	table.body .columns {
 		padding: 20px;
@@ -224,49 +224,52 @@ img {
 		font-size: 18px;
 		font-size: 18px !important;
 		line-height: 1.2em;
+		line-height: 1.2em !important;
 	}
 
 	p.sub-heading {
 		font-size: 21px;
 		font-size: 21px !important;
 		line-height: 1.2em;
+		line-height: 1.2em !important;
 	}
 
-	small p {
+	small p, p small {
 		font-size: 12px;
 		font-size: 12px !important;
 		line-height: 1.2em;
+		line-height: 1.2em !important;
 	}
 }
 @media all {
 @font-face {
 	font-family: Chapeau-Bold;
-	src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Chapeau-Bold.otf');
-	//src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
+	// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Chapeau-Bold.otf');
+	src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
  }
 
 @font-face {
 	font-family: Effra-Bold;
-	src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Effra-Bold.otf');
-	// src: url('https://training.flexigroup.com.au/resources/Effra-Bold.otf');
+	// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Effra-Bold.otf');
+	src: url('https://training.flexigroup.com.au/resources/Effra-Bold.otf');
 	}
 
 @font-face {
 	font-family: Ginger-Bold;
-	src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Bold.otf');
-	// src: url('https://training.flexigroup.com.au/resources/Ginger-Bold.otf');
+	// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Bold.otf');
+	src: url('https://training.flexigroup.com.au/resources/Ginger-Bold.otf');
 	}
 
 	@font-face {
 		font-family: Ginger-Regular;
-		src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Regular.otf');
-		// src: url('https://training.flexigroup.com.au/resources/Ginger-Regular.otf');
+		// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Regular.otf');
+		src: url('https://training.flexigroup.com.au/resources/Ginger-Regular.otf');
 		}
 
 @font-face {
 	font-family: Lexia-Bold;
-	src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Lexia-Bold.otf');
-	// src: url('https://training.flexigroup.com.au/resources/Lexia-Bold.otf');
+	// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Lexia-Bold.otf');
+	src: url('https://training.flexigroup.com.au/resources/Lexia-Bold.otf');
 	}
 	@font-face {
 		font-family: ProximaNova-Regular;
