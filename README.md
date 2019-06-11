@@ -10,3 +10,11 @@ to become:
 .hide-for-large {
 display: none;
 } 
+
+
+
+>>
+Update these two for melon.
+
+node_modules\inky\lib\ componentFactory.js
+node_modules\inky\test\ components.js
