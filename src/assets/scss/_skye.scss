@@ -126,6 +126,16 @@ hr {
 	background-color: $light-gray;
 }
 
+.mediumgray-background {
+	background-color: $medium-gray;
+}
+
+.darkgray-background {
+	background-color: $dark-gray;
+}
+
+
+
 .pink-background {
 	background-color: #BB284C;
 }
@@ -202,6 +212,12 @@ img {
 }
 
 @media only screen and (max-width: #{$global-breakpoint}) {
+
+	h1 {
+		font-size: 24px;
+		font-size: 24px !important;
+	}
+
 	table.body .columns {
 		padding: 20px;
 		padding: 20px !important;
