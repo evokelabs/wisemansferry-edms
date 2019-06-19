@@ -1,321 +1,333 @@
-h1, h2, h3, h4, h5{
-	color: $primary-color;
-	font-family: 'Open Sans', 'Arial Bold', 'Arial Black', sans-serif;
-	hyphens: none;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $primary-color;
+  font-family: 'Open Sans', 'Arial Bold', 'Arial Black', sans-serif;
+  hyphens: none;
 }
 
 h2 {
-	font-size: 24px;
+  font-size: 30px;
 }
 
 h3 {
-	color: $secondary-color;
-	font-size: $h3-font-size;
-	line-height: 1.8rem;
-	letter-spacing: 0px;
+  color: $secondary-color;
+  font-size: $h3-font-size;
+  line-height: 1.8rem;
+  letter-spacing: 0px;
 }
 
-p, h6 {
-	color: $secondary-color;
-	line-height: 1.4em;
-	hyphens: none;
-	font-family: 'Open Sans', Arial, sans-serif;
-	letter-spacing: 0px;
-	margin: 0px;
-	Margin: 0px;
-	margin-bottom: 10px !important;
-	Margin-bottom: 10px !important;
-	margin-bottom: 10px;
-	Margin-bottom: 10px;
+p,
+h6 {
+  color: $secondary-color;
+  line-height: 1.4em;
+  hyphens: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  letter-spacing: 0px;
+  margin: 0px;
+  margin: 0px;
+  margin-bottom: 10px !important;
+  margin-bottom: 10px !important;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 h6 {
-	font-size: 20px;
-	color: $primary-color;
-	font-family: 'Open Sans Bold', Arial Black, Arial Bold, sans-serif;
+  font-size: 20px;
+  color: $primary-color;
+  font-family: 'Open Sans Bold', Arial Black, Arial Bold, sans-serif;
 }
 
 table.button.skye-button table td {
-	background-color: $link-color;
-	box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	background: linear-gradient(to right, #b8284c, #103070) !important;
-	background-image: linear-gradient(to right, #b8284c, #103070) !important;
+  background-color: $link-color;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #b8284c, #103070) !important;
+  background-image: linear-gradient(to right, #b8284c, #103070) !important;
 }
 
 table.button.once-button table td {
-	background-color: #009FCE;
-	background: #009FCE;
-	box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
-	border: 0px;
-
+  background-color: #009fce;
+  background: #009fce;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 0px;
 }
 
-
 table.button.lombard-button table td {
-	background-color: #103070;
-	background: #103070;
-	box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
-	border: 0px;
-
+  background-color: #103070;
+  background: #103070;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 0px;
 }
 
 table.button.rounded.small-rounded table td {
-	border-radius: 5px;
+  border-radius: 5px;
 }
 
-
-small p{
-	color: $dark-gray;
-	font-size: 14px;
-	line-height: 1.5;
+small p {
+  color: $dark-gray;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .valign-middle {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .ginger-bold {
-	font-family: 'Ginger-Bold', 'Open Sans Bold', 'Arial Bold', 'Arial Black', sans-serif;
-	font-size: 25px;
+  font-family: 'Ginger-Bold', 'Open Sans Bold', 'Arial Bold', 'Arial Black',
+    sans-serif;
 }
 
 .ginger-regular {
-	font-family: 'Ginger-Regular', 'Open Sans', 'Arial', sans-serif;
-	font-size: 25px;
+  font-family: 'Ginger-Regular', 'Open Sans', 'Arial', sans-serif;
 }
 
 .bold {
-	font-family: 'Open Sans Bold', 'Arial Bold', 'Arial Black', sans-serif;
+  font-family: 'Open Sans Bold', 'Arial Bold', 'Arial Black', sans-serif;
 }
 
 .primary-color {
-	color: $primary-color;
+  color: $primary-color;
 }
 
 sup {
-	line-height: 0;
+  line-height: 0;
 }
 
 hr {
-	background: $dark-gray;
-	border: 0;
-	border-top: 1px solid $dark-gray;
-	color: $dark-gray;
-	margin: 0;
+  background: $dark-gray;
+  border: 0;
+  border-top: 1px solid $dark-gray;
+  color: $dark-gray;
+  margin: 0;
 }
 
 .gray-HR {
-	background: $dark-gray;
-	border: 0;
-	border-top: 1px solid $dark-gray;
-	color: $dark-gray;
-	margin: 0;
+  background: $dark-gray;
+  border: 0;
+  border-top: 1px solid $dark-gray;
+  color: $dark-gray;
+  margin: 0;
 }
 
 .lightgray-HR {
-	background: $light-gray;
-	border: 0;
-	border-top: 1px solid $light-gray;
-	color: $light-gray;
-	margin: 0;
+  background: $light-gray;
+  border: 0;
+  border-top: 1px solid $light-gray;
+  color: $light-gray;
+  margin: 0;
 }
 
 .lightgray-background {
-	background-color: $light-gray;
+  background-color: $light-gray;
 }
 
 .mediumgray-background {
-	background-color: $medium-gray;
+  background-color: $medium-gray;
 }
 
 .darkgray-background {
-	background-color: $dark-gray;
+  background-color: $dark-gray;
 }
 
-
-
 .pink-background {
-	background-color: #BB284C;
+  background-color: #bb284c;
 }
 
 .blue-background {
-	background-color: #103070;
+  background-color: #103070;
 }
 
 .lightblue-background {
-	background-color: #009FCE;
+  background-color: #009fce;
 }
 
 .table-width-full {
-	width: 100%;
+  width: 100%;
 }
 
-a, a:visited {
-	text-decoration: none;
+a,
+a:visited {
+  text-decoration: none;
 }
 
 a[href^='tel'] {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .pink {
-	color: #b8284c;
+  color: #b8284c;
 }
 
 .link {
-	color: $link-color;
+  color: $link-color;
 }
 
 .lightgray {
-	color: $light-gray;
+  color: $light-gray;
 }
 
 .white {
-	color: $white;
+  color: $white;
 }
 
 .charcoal-blue {
-	color: #103070;
+  color: #103070;
 }
 .light-blue {
-	color: #009FCE;
+  color: #009fce;
 }
 
 .red-pink {
-	color: #f0575b;
+  color: #f0575b;
 }
 
 .text-increase {
-	font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 .font-size-20 {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .margin-bottom-none {
-	margin-botton: 0px !important;
-	Margin-bottom: 0px !important;
+  margin-botton: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 //melon fix
 
-table.button.expand table a, table.button.expanded table a {
-	width: auto;
+table.button.expand table a,
+table.button.expanded table a {
+  width: auto;
 }
 
 img {
-	display: inline-block;
+  display: inline-block;
 }
 
 @media only screen and (max-width: #{$global-breakpoint}) {
+  h1 {
+    font-size: 24px;
+    font-size: 24px !important;
+  }
 
-	h1 {
-		font-size: 24px;
-		font-size: 24px !important;
-	}
+  h2 {
+    font-size: 26px;
+    font-size: 26px !important;
+  }
 
-	table.body .columns {
-		padding: 20px;
-		padding: 20px !important;
-	}
+  table.body .columns {
+    padding: 20px;
+    padding: 20px !important;
+  }
 
-	img.center {
-		display: block;
-		margin: 0 auto;
-	}
+  img.center {
+    display: block;
+    margin: 0 auto;
+  }
 
-	table.button table td a {
-		font-size: 14px;
-	}
+  table.button table td a {
+    font-size: 14px;
+  }
 
-	img {
-		display: inline-block;
-		}
+  img {
+    display: inline-block;
+  }
 
-	p {
-		font-size: 18px;
-		font-size: 18px !important;
-		line-height: 1.2em;
-		line-height: 1.2em !important;
-	}
+  p {
+    font-size: 18px;
+    font-size: 18px !important;
+    line-height: 1.2em;
+    line-height: 1.2em !important;
+  }
 
-	p.sub-heading {
-		font-size: 21px;
-		font-size: 21px !important;
-		line-height: 1.2em;
-		line-height: 1.2em !important;
-	}
+  p.sub-heading {
+    font-size: 21px;
+    font-size: 21px !important;
+    line-height: 1.2em;
+    line-height: 1.2em !important;
+  }
 
-	small p, p small {
-		font-size: 12px;
-		font-size: 12px !important;
-		line-height: 1.2em;
-		line-height: 1.2em !important;
-	}
+  small p,
+  p small {
+    font-size: 12px;
+    font-size: 12px !important;
+    line-height: 1.2em;
+    line-height: 1.2em !important;
+  }
 }
 @media all {
-@font-face {
-	font-family: Chapeau-Bold;
-	// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Chapeau-Bold.otf');
-	src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
- }
+  @font-face {
+    font-family: Chapeau-Bold;
+    // src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Chapeau-Bold.otf');
+    src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
+  }
 
-@font-face {
-	font-family: Effra-Bold;
-	// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Effra-Bold.otf');
-	src: url('https://training.flexigroup.com.au/resources/Effra-Bold.otf');
-	}
+  @font-face {
+    font-family: Effra-Bold;
+    // src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Effra-Bold.otf');
+    src: url('https://training.flexigroup.com.au/resources/Effra-Bold.otf');
+  }
 
-@font-face {
-	font-family: Ginger-Bold;
-	// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Bold.otf');
-	src: url('https://training.flexigroup.com.au/resources/Ginger-Bold.otf');
-	}
+  @font-face {
+    font-family: Ginger-Bold;
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Bold.otf');
+    // src: url('https://training.flexigroup.com.au/resources/Ginger-Bold.otf');
+  }
 
-	@font-face {
-		font-family: Ginger-Regular;
-		// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Regular.otf');
-		src: url('https://training.flexigroup.com.au/resources/Ginger-Regular.otf');
-		}
+  @font-face {
+    font-family: Ginger-Regular;
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Regular.otf');
+    // src: url('https://training.flexigroup.com.au/resources/Ginger-Regular.otf');
+  }
 
-@font-face {
-	font-family: Lexia-Bold;
-	// src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Lexia-Bold.otf');
-	src: url('https://training.flexigroup.com.au/resources/Lexia-Bold.otf');
-	}
-	@font-face {
-		font-family: ProximaNova-Regular;
-		src: url('uat.shophumm.com.au/themes/custom/humm/fonts/Proxima%20Nova/ProximaNova-Regular.otf');
-	}
+  @font-face {
+    font-family: Lexia-Bold;
+    // src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Lexia-Bold.otf');
+    src: url('https://training.flexigroup.com.au/resources/Lexia-Bold.otf');
+  }
+  @font-face {
+    font-family: ProximaNova-Regular;
+    src: url('uat.shophumm.com.au/themes/custom/humm/fonts/Proxima%20Nova/ProximaNova-Regular.otf');
+  }
 
-	@font-face {
-		font-family: ProximaNova-Light;
-		src: url('uat.shophumm.com.au/themes/custom/humm/fonts/Proxima%20Nova/ProximaNova-Light.otf');
-	}
+  @font-face {
+    font-family: ProximaNova-Light;
+    src: url('uat.shophumm.com.au/themes/custom/humm/fonts/Proxima%20Nova/ProximaNova-Light.otf');
+  }
 
-	@font-face {
-		font-family: ProximaNova-Bold;
-		src: url('uat.shophumm.com.au/themes/custom/humm/fonts/Proxima%20Nova/ProximaNova-Extrabold.otf');
-	}
+  @font-face {
+    font-family: ProximaNova-Bold;
+    src: url('uat.shophumm.com.au/themes/custom/humm/fonts/Proxima%20Nova/ProximaNova-Extrabold.otf');
+  }
 
-	
-	@font-face {
-		font-family: 'Open Sans';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-	}
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+      url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0b.woff2)
+        format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+      U+2215, U+FEFF, U+FFFD;
+  }
 
-	@font-face {
-		font-family: 'Open Sans Bold';
-		font-style: normal;
-		font-weight: 700;
-		src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-	}
+  @font-face {
+    font-family: 'Open Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'),
+      url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2)
+        format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+      U+2215, U+FEFF, U+FFFD;
+  }
 }
