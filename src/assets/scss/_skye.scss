@@ -176,6 +176,10 @@ a[href^='tel'] {
   color: $white;
 }
 
+.white-bg {
+  background-color: #fff;
+}
+
 .charcoal-blue {
   color: #103070;
 }
@@ -198,6 +202,26 @@ a[href^='tel'] {
 .margin-bottom-none {
   margin-botton: 0px !important;
   margin-bottom: 0px !important;
+}
+
+.box-shadow-container {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+.box-shadow-container-bottom {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+.border-radius-top {
+  border-radius: 10px 10px 0 0;
+}
+
+.border-radius-bottom {
+  border-radius: 0 0 10px 10px;
+}
+
+.border-radius-10 {
+  border-radius: 10px;
 }
 
 //melon fix
