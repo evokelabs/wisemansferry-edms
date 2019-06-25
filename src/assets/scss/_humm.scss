@@ -1,53 +1,11 @@
-p, h1, h3, h4, h5, h6 {
-	font-family: Proxima-Light, Arial, sans-serif;
-	hyphens: none;
-}
-
-
-.no-margin {
-	margin: 0;
-	Margin: 0;
-}
-
-.no-padding {
-	padding: 0;
-}
-
-.small-width {
-	width: 22px;
-}
-
-p.header-small a {
-	font-family: 'Roboto', Arial, sans-serif;
-	font-size: 14px;
-	line-height: 16px;
-	color: $link-color;
-}
-
-.header-offset-padding-x {
-	padding-left: 40px;
-}
-
-.sig-offset-padding-x {
-	position: relative;
-	right: 10px;
-}
-
-hr {
-	background: $pre-color;
-	border: 0;
-	border-top: 1px solid $pre-color;
-	color: $pre-color;
-	height: 1px;
-	margin: 0;
-}
-
 p,
-ol li {
-	font-size: 16px;
-	line-height: 20px;
-	letter-spacing: -0.5px;
-	hyphens: none;
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Proxima-Light, Arial, sans-serif;
+  hyphens: none;
 }
 
 h1,
@@ -56,111 +14,165 @@ h3,
 h4,
 h5,
 h6 {
-	color: $dark-gray;
+  color: $dark-gray;
 }
 
 h2 {
-	letter-spacing: -1.5px;
-	line-height: 25px;
+  letter-spacing: -1.5px;
+  line-height: 25px;
+  font-size: 30px;
 }
 
 h3 {
-	letter-spacing: -1px;
-	line-height: 28px;
-	color: $dark-gray;
+  letter-spacing: -1px;
+  line-height: 28px;
+  color: $dark-gray;
 }
 
 h4 {
-	letter-spacing: -1px;
-	line-height: 25px;
+  letter-spacing: -1px;
+  line-height: 25px;
 }
 
-.font-extrabold {
-	font-family: Proxima-ExtraBold, 'Arial Black', 'Arial Bold', sans-serif;
+.no-margin {
+  margin: 0;
+  margin: 0;
 }
 
-a, a:visited {
-	color: $link-color;
-	font-size: 16px;
-	text-decoration: none;
+.no-padding {
+  padding: 0;
+}
+
+.small-width {
+  width: 22px;
+}
+
+p.header-small a {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $link-color;
+}
+
+.header-offset-padding-x {
+  padding-left: 40px;
+}
+
+.sig-offset-padding-x {
+  position: relative;
+  right: 10px;
+}
+
+hr {
+  background: $pre-color;
+  border: 0;
+  border-top: 1px solid $pre-color;
+  color: $pre-color;
+  height: 1px;
+  margin: 0;
+}
+
+p,
+ol li {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  hyphens: none;
+}
+
+.bold {
+  font-family: Proxima-ExtraBold, 'Arial Black', 'Arial Bold', sans-serif;
+}
+
+a,
+a:visited {
+  color: $link-color;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .inline-block {
-	display: inline-block;
+  display: inline-block;
 }
 
 .font-small {
-	margin-top: 2px;
-	font-size: 12px;
-	letter-spacing: -0.5px;
-	line-height: 18px;
-	hyphens: none;
+  margin-top: 2px;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  line-height: 18px;
+  hyphens: none;
 }
 
 .lightgrey-background {
-	background: $light-gray !important;
+  background-color: $light-gray !important;
+  background-color: $light-gray;
+}
+
+.backgoundcolor-background {
+  background-color: $body-background !important;
+  background-color: $body-background;
 }
 
 .white-background {
-	background: $white !important;
+  background-color: $white !important;
+  background-color: $white;
 }
 
 .orange-color {
-	color: $link-color;
+  color: $link-color;
+}
+
+.darkgray-color {
+  color: $dark-gray;
 }
 
 .table-width-full {
-	width: 650px;
-	background-color: $light-gray;
+  width: 650px;
 }
 
 table.button table td a {
-	width: 200px;
-	text-align: center;
-	font-family: 'Roboto Bold', Arial Black, Arial, sans-serif;
+  width: 200px;
+  text-align: center;
 }
 
 .text-increase {
-	font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 @media only screen and (max-width: #{$global-breakpoint}) {
-	.table-width-full {
-		width: 100% !important;
-	}
-
-	th.columns.first.small-12 {
-		padding-left: 25px !important;
-	}
-
-	th.columns.last.small-12 {
-		padding-right: 25px !important;
-	}
+  .table-width-full {
+    width: 100% !important;
+  }
+  h2 {
+    font-size: 24px;
+  }
 }
 
 // Custom Fonts
 
 @media all {
-	@font-face {
-		font-family: Proxima-Light;
-		src: url('https://s2433.gridserver.com/clients/Flexigroup/HUMM/02-HUMM-SellerTransition/assets/fonts/ProximaNova-Light.otf');
-	}
-	@font-face {
-		font-family: Proxima-ExtraBold;
-		src: url('https://s2433.gridserver.com/clients/Flexigroup/HUMM/02-HUMM-SellerTransition/assets/fonts/ProximaNova-Extrabold.otf');
-	}
-	@font-face {
-		font-family: 'Roboto';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-	}
-	@font-face {
-		font-family: 'Roboto Bold';
-		font-style: normal;
-		font-weight: 700;
-		src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-	}
+  @font-face {
+    font-family: Proxima-Light;
+    // src: url('https://s2433.gridserver.com/clients/Flexigroup/HUMM/02-HUMM-SellerTransition/assets/fonts/ProximaNova-Light.otf');
+    src: url('https://training.flexigroup.com.au/resources/ProximaNova-Light.otf');
+  }
+  @font-face {
+    font-family: Proxima-ExtraBold;
+    // src: url('https://s2433.gridserver.com/clients/Flexigroup/HUMM/02-HUMM-SellerTransition/assets/fonts/ProximaNova-Extrabold.otf');
+    src: url('https://training.flexigroup.com.au/resources/ProximaNova-Bold.otf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Roboto Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
 }
