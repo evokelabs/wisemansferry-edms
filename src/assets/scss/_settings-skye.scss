@@ -30,7 +30,7 @@ $pre-color: #ff6908;
 $global-width: 600px;
 $global-width-small: 95%;
 $global-gutter: 40px;
-$body-background: #e5e5e5;
+$body-background: #f0f0f0;
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
@@ -97,18 +97,18 @@ $stat-font-size: 40px;
 $button-padding: (
   tiny: 4px 8px 4px 8px,
   small: 5px 10px 5px 10px,
-  default: 12px 80px 12px 80px,
-  large: 10px 20px 10px 20px
+  default: 15px 20px 15px 20px,
+  large: 23px 84px 23px 84px
 );
 $button-font-size: (
   tiny: 10px,
   small: 12px,
-  default: 17px,
-  large: 20px
+  default: 18px,
+  large: 27px
 );
 $button-color: $white;
 $button-color-alt: $medium-gray;
-$button-font-weight: normal;
+$button-font-weight: bold;
 $button-margin: 0 0 $global-margin 0;
 $button-background: $link-color;
 $button-border: 2px solid $button-background;

@@ -13,7 +13,7 @@ h2 {
 }
 
 h3 {
-  color: $secondary-color;
+  color: $primary-color;
   font-size: $h3-font-size;
   line-height: 1.8rem;
   letter-spacing: 0px;
@@ -43,8 +43,7 @@ h6 {
 table.button.skye-button table td {
   background-color: $link-color;
   box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background: linear-gradient(to right, #b8284c, #103070) !important;
   background-image: linear-gradient(to right, #b8284c, #103070) !important;
 }
@@ -70,7 +69,10 @@ table.button.rounded.small-rounded table td {
 small p {
   color: $dark-gray;
   font-size: 14px;
-  line-height: 1.5;
+}
+
+th.columns {
+	padding-bottom: 0px;
 }
 
 .valign-middle {
@@ -119,6 +121,14 @@ hr {
   border: 0;
   border-top: 1px solid $light-gray;
   color: $light-gray;
+  margin: 0;
+}
+
+.red-HR {
+  background: #B8284C;
+  border: 0;
+  border-top: 1px solid #B8284C;
+  color: #B8284C;
   margin: 0;
 }
 
@@ -200,7 +210,7 @@ a[href^='tel'] {
 }
 
 .margin-bottom-none {
-  margin-botton: 0px !important;
+  margin-bottom: 0px !important;
   margin-bottom: 0px !important;
 }
 
@@ -224,15 +234,25 @@ a[href^='tel'] {
   border-radius: 10px;
 }
 
+.font-size-16 {
+  font-size: 16px;
+}
+
 //melon fix
 
 table.button.expand table a,
 table.button.expanded table a {
   width: auto;
+  margin: 0 10px 0 10px;
+  Margin: 0 10px 0 10px;
+}
+
+table.button.large table a {
+  letter-spacing: 2px;
 }
 
 img {
-  display: inline-block;
+  display: block;
 }
 
 @media only screen and (max-width: #{$global-breakpoint}) {
@@ -256,17 +276,13 @@ img {
     margin: 0 auto;
   }
 
-  table.button table td a {
-    font-size: 14px;
-  }
-
   img {
     display: inline-block;
   }
 
   p {
-    font-size: 18px;
-    font-size: 18px !important;
+    font-size: 20px;
+    font-size: 20px !important;
     line-height: 1.2em;
     line-height: 1.2em !important;
   }
@@ -285,18 +301,23 @@ img {
     line-height: 1.2em;
     line-height: 1.2em !important;
   }
+
+  table.button.large table a {
+    font-size: 22px;
+    font-size: 22px !important;
+  }
 }
 @media all {
   @font-face {
     font-family: Chapeau-Bold;
-    // src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Chapeau-Bold.otf');
-    src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Chapeau-Bold.otf');
+    // src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
   }
 
   @font-face {
     font-family: Effra-Bold;
-    // src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Effra-Bold.otf');
-    src: url('https://training.flexigroup.com.au/resources/Effra-Bold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Effra-Bold.otf');
+    // src: url('https://training.flexigroup.com.au/resources/Effra-Bold.otf');
   }
 
   @font-face {
@@ -313,8 +334,8 @@ img {
 
   @font-face {
     font-family: Lexia-Bold;
-    // src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Lexia-Bold.otf');
-    src: url('https://training.flexigroup.com.au/resources/Lexia-Bold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Lexia-Bold.otf');
+    // src: url('https://training.flexigroup.com.au/resources/Lexia-Bold.otf');
   }
   @font-face {
     font-family: ProximaNova-Regular;
