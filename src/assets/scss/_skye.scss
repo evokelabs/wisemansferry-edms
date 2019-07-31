@@ -1,37 +1,39 @@
+// Typography
+
 h1,
 h2,
 h3,
 h4,
 h5 {
   color: $primary-color;
-  font-family: 'Open Sans', 'Arial Bold', 'Arial Black', sans-serif;
+  font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif;
   hyphens: none;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 h2 {
   font-size: 30px;
+  color: $white;
 }
 
 h3 {
-  color: $primary-color;
+  color: $white;
   font-size: $h3-font-size;
   line-height: 1.8rem;
   letter-spacing: 0px;
+  font-family: Chapeau, 'Arial', sans-serif;
 }
 
 p,
 h6 {
   color: $secondary-color;
   line-height: 1.4em;
-  hyphens: none;
-  font-family: 'Open Sans', Arial, sans-serif;
   letter-spacing: 0px;
-  margin: 0px;
-  margin: 0px;
-  margin-bottom: 10px !important;
-  margin-bottom: 10px !important;
-  margin-bottom: 10px;
-  margin-bottom: 10px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  hyphens: none;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 h6 {
@@ -39,6 +41,63 @@ h6 {
   color: $primary-color;
   font-family: 'Open Sans Bold', Arial Black, Arial Bold, sans-serif;
 }
+
+.ginger-bold {
+  font-family: 'Ginger-Bold', 'Open Sans Bold', 'Arial Bold', 'Arial Black',
+    sans-serif;
+    font-weight: bold;
+}
+
+.ginger-regular {
+  font-family: 'Ginger-Regular', 'Open Sans', 'Arial', sans-serif;
+}
+
+.bold {
+  font-family: 'Open Sans Bold', 'Arial Bold', 'Arial Black', sans-serif;
+  font-weight: bold;
+}
+
+small p {
+  color: $dark-gray;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.heading-bold {
+	font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif;
+}
+
+a,
+a:visited {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a[href^='tel'] {
+  color: inherit;
+  text-decoration: none;
+}
+
+sup {
+	line-height: 0;
+}
+
+
+// Buttons
+
+table.button table td {
+	background: #b8284c;
+	background-color: $link-color;
+	background-image: linear-gradient(to right, #b8284c, #103070);
+	box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+table.button table a:hover {
+	border: 0 solid #fff;
+	background: linear-gradient(to left, #b8284c, #103070);
+	border-radius: 30px;
+}
+
 
 table.button.skye-button table td {
   background-color: $link-color;
@@ -66,10 +125,78 @@ table.button.rounded.small-rounded table td {
   border-radius: 5px;
 }
 
-small p {
-  color: $dark-gray;
-  font-size: 14px;
+.button a {
+	font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
+
+
+// Colours
+
+
+
+.primary-color {
+  color: $primary-color;
+}
+
+.lightgray-background {
+  background-color: $light-gray;
+}
+
+.mediumgray-background {
+  background-color: $medium-gray;
+}
+
+.darkgray-background {
+  background-color: $dark-gray;
+}
+
+.pink-background {
+  background-color: #bb284c;
+}
+
+.blue-background {
+  background-color: #103070;
+}
+
+.lightblue-background {
+  background-color: #009fce;
+}
+
+.pink {
+  color: #b8284c;
+}
+
+.link {
+  color: $link-color;
+}
+
+.lightgray {
+  color: $light-gray;
+}
+
+.white {
+  color: $white;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.charcoal-blue {
+  color: #103070;
+}
+.light-blue {
+  color: #009fce;
+}
+
+.red-pink {
+  color: #f0575b;
+}
+
+
+// Utility
 
 th.columns {
 	padding-bottom: 0px;
@@ -79,21 +206,36 @@ th.columns {
   vertical-align: middle;
 }
 
-.ginger-bold {
-  font-family: 'Ginger-Bold', 'Open Sans Bold', 'Arial Bold', 'Arial Black',
-    sans-serif;
+.box-shadow-container {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
 }
 
-.ginger-regular {
-  font-family: 'Ginger-Regular', 'Open Sans', 'Arial', sans-serif;
+.box-shadow-container-bottom {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
 }
 
-.bold {
-  font-family: 'Open Sans Bold', 'Arial Bold', 'Arial Black', sans-serif;
+.border-radius-top {
+  border-radius: 10px 10px 0 0;
+  border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
-.primary-color {
-  color: $primary-color;
+.border-radius-bottom {
+  border-radius: 0 0 10px 10px;
+  border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.shadow {
+  box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 sup {
@@ -132,159 +274,46 @@ hr {
   margin: 0;
 }
 
-.lightgray-background {
-  background-color: $light-gray;
-}
-
-.mediumgray-background {
-  background-color: $medium-gray;
-}
-
-.darkgray-background {
-  background-color: $dark-gray;
-}
-
-.pink-background {
-  background-color: #bb284c;
-}
-
-.blue-background {
-  background-color: #103070;
-}
-
-.lightblue-background {
-  background-color: #009fce;
-}
-
 .table-width-full {
   width: 100%;
 }
 
-a,
-a:visited {
-  text-decoration: none;
-}
 
-a[href^='tel'] {
-  color: inherit;
-  text-decoration: none;
-}
-
-.pink {
-  color: #b8284c;
-}
-
-.link {
-  color: $link-color;
-}
-
-.lightgray {
-  color: $light-gray;
-}
-
-.white {
-  color: $white;
-}
-
-.white-bg {
-  background-color: #fff;
-}
-
-.charcoal-blue {
-  color: #103070;
-}
-.light-blue {
-  color: #009fce;
-}
-
-.red-pink {
-  color: #f0575b;
-}
-
-.text-increase {
-  font-size: 1.1em;
-}
-
-.font-size-20 {
-  font-size: 20px;
-}
-
-.margin-bottom-none {
-  margin-bottom: 0px !important;
-  margin-bottom: 0px !important;
-}
-
-.box-shadow-container {
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
-}
-
-.box-shadow-container-bottom {
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
-}
-
-.border-radius-top {
-  border-radius: 10px 10px 0 0;
-}
-
-.border-radius-bottom {
-  border-radius: 0 0 10px 10px;
-}
-
-.border-radius-10 {
-  border-radius: 10px;
-}
-
-.font-size-16 {
-  font-size: 16px;
-}
 
 //melon fix
 
 table.button.expand table a,
 table.button.expanded table a {
-  width: auto;
-  margin: 0 10px 0 10px;
-  Margin: 0 10px 0 10px;
+  // width: auto;
+  // margin: 0 10px 0 10px;
+  // Margin: 0 10px 0 10px;
 }
 
-table.button.large table a {
-  letter-spacing: 2px;
-}
 
-img {
-  display: block;
-}
+// Custom Fonts
 
 @media only screen and (max-width: #{$global-breakpoint}) {
+  // Typography
   h1 {
     font-size: 24px;
     font-size: 24px !important;
   }
 
   h2 {
-    font-size: 26px;
-    font-size: 26px !important;
+    font-size: 30px;
+    font-size: 30px !important;
+		letter-spacing: 0.5px !important;
   }
 
-  table.body .columns {
-    padding: 20px;
-    padding: 20px !important;
-  }
-
-  img.center {
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    display: inline-block;
-  }
+  h3 {
+		font-size: 16px !important;
+	}
 
   p {
-    font-size: 20px;
-    font-size: 20px !important;
-    line-height: 1.2em;
-    line-height: 1.2em !important;
+		font-size: 16px;
+		line-height: 1.5rem;
+		font-size: 16px !important;
+		line-height: 1.5rem !important;
   }
 
   p.sub-heading {
@@ -302,6 +331,24 @@ img {
     line-height: 1.2em !important;
   }
 
+  // Button
+
+  table.button table td a {
+		font-size: 14px;
+	}
+
+  // Utility
+
+  img.center {
+    display: block;
+    margin: 0 auto;
+  }  
+
+  table.body .columns {
+    padding: 20px;
+    padding: 20px !important;
+  }
+
   table.button.large table a {
     font-size: 22px;
     font-size: 22px !important;
@@ -310,31 +357,31 @@ img {
 @media all {
   @font-face {
     font-family: Chapeau-Bold;
-    src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Chapeau-Bold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Chapeau-Bold.otf');
     // src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
   }
 
   @font-face {
     font-family: Effra-Bold;
-    src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Effra-Bold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Effra-Bold.otf');
     // src: url('https://training.flexigroup.com.au/resources/Effra-Bold.otf');
   }
 
   @font-face {
     font-family: Ginger-Bold;
-    src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Bold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Ginger-Bold.otf');
     // src: url('https://training.flexigroup.com.au/resources/Ginger-Bold.otf');
   }
 
   @font-face {
     font-family: Ginger-Regular;
-    src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Ginger-Regular.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Ginger-Regular.otf');
     // src: url('https://training.flexigroup.com.au/resources/Ginger-Regular.otf');
   }
 
   @font-face {
     font-family: Lexia-Bold;
-    src: url('https://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/Lexia-Bold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Lexia-Bold.otf');
     // src: url('https://training.flexigroup.com.au/resources/Lexia-Bold.otf');
   }
   @font-face {
