@@ -41,9 +41,9 @@ h4 {
 
 p,
 ol li {
-  font-size: 15px;
-  line-height: 20px;
-  // letter-spacing: -0.5px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.25px;
   hyphens: none;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
@@ -59,6 +59,14 @@ p.header-small, p.header-small a {
 
 p.header-small a {
   color: $link-color;
+}
+
+small p,
+p small {
+  font-size: 12px;
+  font-size: 12px !important;
+  line-height: 1.2em;
+  line-height: 1.2em !important;
 }
 
 .bold {
@@ -140,8 +148,21 @@ hr {
 
 
 table.button table td a {
-  // width: 200px;
   text-align: center;
+}
+
+table.button.expanded {
+  width: 100%;
+  width: 100% !important;
+
+}
+
+//Expanded fix for outlook
+
+.button.expanded {
+  td:not(.expander) {
+    width: 100%;
+  }
 }
 
 
