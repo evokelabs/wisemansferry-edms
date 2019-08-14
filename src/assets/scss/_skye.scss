@@ -6,14 +6,14 @@ h3,
 h4,
 h5 {
   hyphens: none;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  line-height: 3rem;
 }
 
 
 h3 {
   line-height: 1.8rem;
-  letter-spacing: 1.5px;
 }
 
 p,
@@ -22,8 +22,8 @@ h6 {
   letter-spacing: 0px;
   font-family: 'Open Sans', Arial, sans-serif;
   hyphens: none;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
 }
 
 h6 {
@@ -93,16 +93,27 @@ table.button table td {
 table.button table a:hover {
 	border: 0 solid #fff;
 	background: linear-gradient(to left, #b8284c, #103070);
-	border-radius: 30px;
+	border-radius: 50px;
 }
 
 
 table.button.skye-button table td {
   background-color: $link-color;
   box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  letter-spacing: 1px;
   background: linear-gradient(to right, #b8284c, #103070) !important;
   background-image: linear-gradient(to right, #b8284c, #103070) !important;
+  background-image: -webkit-gradient(to right, #b8284c, #103070) !important;
+  background-image: -webkit-linear-gradient(to right, #b8284c, #103070) !important;
+  background-image: -moz-linear-gradient(to right, #b8284c, #103070) !important;
+  background-image: -ms-linear-gradient(to right, #b8284c, #103070) !important;
+  background-image: -o-linear-gradient(to right, #b8284c, #103070) !important;
+}
+
+
+table.button.skye-button table td  a {
+  letter-spacing: 2px;  
+  font-family: Open Sans Bold, 'Arial Bold', 'Arial Black', sans-serif;   
+  font-weight: bold; 
 }
 
 table.button.once-button table td {
@@ -124,9 +135,8 @@ table.button.rounded.small-rounded table td {
 }
 
 .button a {
-	font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+  font-family: Chapeau-Bold, 'Arial Bold', 'Arial Black', sans-serif;  
+  font-weight: bold;
 }
 
 
@@ -204,7 +214,13 @@ h3 {
   color: #f0575b;
 }
 
+// Backgrounds
 
+.bottom-clouds-bg {
+  background-image: url("https://emarketing-au.s3-ap-southeast-2.amazonaws.com/598/sip49Baeh5zX1es3l4leJJRt614tV-up71W7_5di_FU/2245159.gif");
+  background-repeat: no-repeat !important;
+  background-position:  90% 90%;
+}
 
 // Utility
 
@@ -306,8 +322,15 @@ table.button.expanded table a {
 @media only screen and (max-width: #{$global-breakpoint}) {
   // Typography
   h1 {
-    font-size: 24px;
-    font-size: 24px !important;
+    font-size: 40px;
+    font-size: 40px !important;
+    line-height: 2.5rem;
+    line-height: 2.5rem !important;
+  }
+
+  h1.ginger-bold {
+    font-size: 32px;
+    font-size: 32px !important;
   }
 
   h2 {
@@ -316,10 +339,16 @@ table.button.expanded table a {
 		letter-spacing: 0.5px !important;
   }
 
+  h3 {
+    font-size: 27px;
+    font-size: 27px !important;
+		letter-spacing: 0.5px !important;
+  }
+
   p {
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 1.5rem;
-		font-size: 20px !important;
+		font-size: 18px !important;
 		line-height: 1.5rem !important;
   }
 
@@ -343,11 +372,34 @@ table.button.expanded table a {
     line-height: 1.2em !important;
   }
 
+  .small-text-center {
+    margin: 0 auto;
+    Margin: 0 auto;
+    float: none;
+    text-align: center;
+
+  }
+
   // Button
 
   table.button table td a {
 		font-size: 14px;
-	}
+  }
+  
+  table.button.large table a {
+    padding: 15px 0px 15px 0px;
+    padding: 15px 0px 15px 0px !important;
+    font-size: 23px;
+    font-size: 23px !important;
+    letter-spacing: 1px;
+    letter-spacing: 1px !important;
+  }
+
+  // Background
+  .bottom-clouds-bg {
+    background-image: none;
+    background-image: none !important;
+  }
 
   // Utility
 
@@ -359,11 +411,6 @@ table.button.expanded table a {
   table.body .columns {
     padding: 20px;
     padding: 20px !important;
-  }
-
-  table.button.large table a {
-    font-size: 22px;
-    font-size: 22px !important;
   }
 }
 //Expanded fix for outlook
@@ -377,32 +424,32 @@ table.button.expanded table a {
 @media all {
   @font-face {
     font-family: Chapeau-Bold;
-    // src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Chapeau-Bold.otf');
-    src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Chapeau-Bold.otf');
+    // src: url('https://fleximanila.bitbucket.io/assets/fonts/Chapeau-Bold.otf');
   }
 
   @font-face {
     font-family: Effra-Bold;
-    // src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Effra-Bold.otf');
-    src: url('https://training.flexigroup.com.au/resources/Effra-Bold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Effra-Bold.otf');
+    // src: url('https://training.flexigroup.com.au/resources/Effra-Bold.otf');
   }
 
   @font-face {
     font-family: Ginger-Bold;
-    // src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Ginger-Bold.otf');
-    src: url('https://training.flexigroup.com.au/resources/Ginger-Bold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Ginger-Bold.otf');
+    // src: url('https://training.flexigroup.com.au/resources/Ginger-Bold.otf');
   }
 
   @font-face {
     font-family: Ginger-Regular;
-    // src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Ginger-Regular.otf');
-    src: url('https://training.flexigroup.com.au/resources/Ginger-Regular.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Ginger-Regular.otf');
+    // src: url('https://training.flexigroup.com.au/resources/Ginger-Regular.otf');
   }
 
   @font-face {
     font-family: Lexia-Bold;
-    // src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Lexia-Bold.otf');
-    src: url('https://training.flexigroup.com.au/resources/Lexia-Bold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/Lexia-Bold.otf');
+    // src: url('https://training.flexigroup.com.au/resources/Lexia-Bold.otf');
   }
   @font-face {
     font-family: ProximaNova-Regular;
