@@ -1,207 +1,348 @@
-h1, h2, h3, h4, h5{
-	color: $primary-color;
-	font-family: ProximaNova-Extrabold, 'Arial Black', 'Arial Bold', sans-serif;
-	font-size: 50px;
-	line-height: 40px;
-	letter-spacing: -2px;
-	hyphens: none;
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $primary-color;
+  font-size: 50px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  font-weight: 900;
+  font-family: 'ProximaNova-Black', Arial Black, sans-serif;
+
 }
 
 h1 {
-	font-size: 57px;
-	text-transform: capitalize;
+  font-size: 40px;
+  text-transform: capitalize;
+  letter-spacing: -2px;
+
 }
 
 h3 {
-	color: $secondary-color;
-	font-size: $h3-font-size;
-	line-height: 20px;
-	letter-spacing: -0.5px;
+  color: $purple;
+  font-size: $h3-font-size;
+  line-height: 100%;
+  letter-spacing: -1px;
+  
 }
 
-p, h6 {
-	color: $dark-gray;
-	line-height: 20px;
-	hyphens: none;
-	font-family: ProximaNova-Regular, Arial, sans-serif;
-	letter-spacing: 0px;
-	font-size: 16px;
+h4 {
+  font-size: 27px;
+  letter-spacing: -1px;
+  font-family: 'ProximaNova-ExtraBold', Arial Black, sans-serif;
+  line-height: 100%;
+  color: $secondary-color;
+}
 
+p,
+h6 {
+  line-height: 100%;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  letter-spacing: 0px;
+  font-size: 20px;
+  font-weight: 300;
+
+}
+
+.normal-font {
+  font-weight: 400;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h6 {
-	font-size: 16px;
+  font-size: 16px;
+}
+
+.promixa-nova-regular {
+  font-family: 'ProximaNova-Regular';
+  line-height: 100%;
+}
+
+.promixa-nova-bold {
+  font-family: 'ProximaNova-Extrabold', Arial Black, sans-serif;
+  line-height: 100%;
 }
 
 p.header-small a {
-	font-family: 'Roboto', Arial, sans-serif;
-	font-size: 14px;
-	line-height: 16px;
-	color: $link-color;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $link-color;
 }
 
 .px-left {
-	padding-left: 30px;
+  padding-left: 30px;
 }
 
 .icon-margin {
-	margin-top: 5px;
+  margin-top: 5px;
 }
 
-table.button table td {
-	background: #b8284c;
-	background-color: $link-color;
-	background-image: linear-gradient(to right, #b8284c, #103070);
-	box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-table.button table a:hover {
-	border: 0 solid #fff;
-	background: linear-gradient(to left, #b8284c, #103070);
-	border-radius: 30px;
-}
-
-a, a:visited {
-	color: $link-color;
-	text-decoration: none;
-	// font-size: 16px;
+a {
+  text-decoration: none;
 }
 
 a[href^='tel'] {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
+.bold {
+  font-weight: 600;
+}
+
+hr {
+  background: $white;
+  border: 0;
+  border-top: 1px solid $white;
+  color: $white;
+  margin: 0;
+}
+
+.subheading {
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+
+.text-increase {
+  font-size: 1.1em;
+}
+
+small, small p, small a  {
+  font-size: 16px;
+}
+small, small p {
+  color: $secondary-color;
+}
+
+
+// Buttons
+
+table.button table td {
+  padding: 7px !important;
+}
+
+table.button.bold table td a {
+  text-transform: uppercase;
+  font-family: ProximaNova-Extrabold, 'Arial Black', 'Arial Bold', sans-serif;
+}
+
+table.button.inline-block {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  Margin: 0 5px 5px 0;
+}
+
+table.button.inline-block table td {
+  text-align: center;
+  width: 30px;
+  min-width: 30px;
+  padding: 0px !important;
+}
+
+// Colors
+
 .pink {
-	color: $link-color;
+  color: $link-color;
 }
 
 .link {
-	color: $link-color;
+  color: $link-color;
 }
 
 .black-text p,
 .black-text p small {
-	color: $medium-gray;
-	font-size: 14px;
-	line-height: 1.3rem;
+  color: $medium-gray;
+  font-size: 14px;
+  line-height: 1.3rem;
 }
 
 .black-text p a,
 .black-text p small a {
-	color: $link-color;
-}
-
-.banner-small {
-	display: none;
-}
-
-.bold {
-	font-family: ProximaNova-Extrabold, 'Arial Black', 'Arial Bold', sans-serif;
-}
-
-hr {
-	background: $dark-gray;
-	border: 0;
-	border-top: 1px solid $dark-gray;
-	color: $dark-gray;
-	margin: 0;
+  color: $link-color;
 }
 
 .gray-HR {
-	background: $dark-gray;
-	border: 0;
-	border-top: 1px solid $dark-gray;
-	color: $dark-gray;
-	margin: 0;
+  background: $dark-gray;
+  border: 0;
+  border-top: 1px solid $dark-gray;
+  color: $dark-gray;
+  margin: 0;
 }
 
 .red-HR {
-	background: $primary-color;
-	border: 0;
-	border-top: 5px solid $primary-color;
-	color: $primary-color;
-	margin: 0;
+  background: $primary-color;
+  border: 0;
+  border-top: 5px solid $primary-color;
+  color: $primary-color;
+  margin: 0;
+}
+
+.purple-HR {
+  background: $purple;
+  border: 0;
+  border-top: 2px solid $purple;
+  color: $purple;
+  margin: 0;
 }
 
 .lightgray-HR {
-	background: $light-gray;
-	border: 0;
-	border-top: 1px solid $light-gray;
-	color: $light-gray;
-	margin: 0;
+  background: $light-gray;
+  border: 0;
+  border-top: 1px solid $light-gray;
+  color: $light-gray;
+  margin: 0;
 }
 
 .lightgray-background {
-	background-color: $light-gray;
+  background-color: $light-gray;
+}
+
+.white-background {
+  background-color: $white;
 }
 
 .mediumgray-background {
-	background-color: $medium-gray;
+  background-color: $medium-gray;
 }
 
-.table-width-full {
-	width: 100%;
+.darkgray-background {
+  background-color: $dark-gray;
+}
+
+.purple-background {
+  background-color: $purple;
 }
 
 .primary-color {
-	color: $primary-color;
+  color: $primary-color;
 }
 .charcoal-blue {
-	color: #002d56;
+  color: #002d56;
+}
+
+.black-text {
+  color: $black;
 }
 
 .red-pink {
-	color: #f0575b;
+  color: #f0575b;
 }
 
 .black {
-	color: $black;
+  color: $black;
 }
 
 .darkgray {
-	color: $dark-gray;
+  color: $dark-gray;
 }
 
 .lightgray {
-	color: #666666;
+  color: #666666;
 }
 
-.text-increase {
-	font-size: 1.1em;
+.purple {
+  color: $purple;
 }
 
+// Utility
+
+.banner-small {
+  display: none;
+}
+
+.table-width-full {
+  width: 100%;
+}
+
+.box-shadow-flexigroup {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+//Expanded fix for outlook
+
+.button.expanded {
+  td:not(.expander) {
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width: #{$global-breakpoint}) {
-	table.body .columns {
-		padding: 10px !important;
-	}
+  table.body .columns {
+    padding: 20px !important;
+  }
 
-	img.center {
-		display: block;
-		margin: 0 auto;
-	}
+  img.center {
+    display: block;
+    margin: 0 auto;
+  }
 
-	table.button table td a {
-		font-size: 14px;
-	}
+  .subheading-responsive {
+    font-size: 22px;
+    font-size: 22px !important;
+  }
+
+  .body-copy-responsive {
+    font-size: 25px;
+    line-height: 30px;
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+
+  small, small p, small a  {
+    font-size: 15px;
+    font-size: 15px !important;
+  }
 }
 @media all {
-	@font-face {
-		font-family: ProximaNova-Regular;
-		src: url('http://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/ProximaNova-Regular.otf');
-		
-	}
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
 
-	@font-face {
-		font-family: ProximaNova-Light;
-		src: url('http://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/ProximaNova-Light.otf');
-	}
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
 
-	@font-face {
-		font-family: ProximaNova-Extrabold;
-		src: url('http://s2433.gridserver.com/clients/Flexigroup/SKYE/fonts/ProximaNova-Extrabold.otf');
-	}
+  @font-face {
+    font-family: ProximaNova-Regular;
+    // src: url('https://training.flexigroup.com.au/resources/ProximaNova-Regular.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/ProximaNova-Regular.otf');
+  }
 
+  @font-face {
+    font-family: ProximaNova-Light;
+    // src: url('https://training.flexigroup.com.au/resources/ProximaNova-Light.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/ProximaNova-Light.otf');
+  }
 
+  @font-face {
+    font-family: ProximaNova-Extrabold;
+    // src: url('https://training.flexigroup.com.au/resources/PromixaNova-ExtraBold.otf');
+    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/ProximaNova-ExtraBold.otf');
+  }
+
+  @font-face {
+  font-family: ProximaNova-Black;
+   // src: url('https://training.flexigroup.com.au/resources/ProximaNova-Black.otf');
+  src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/ProximaNova-Black.otf')
+  }
 }
