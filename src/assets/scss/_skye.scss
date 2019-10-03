@@ -4,16 +4,22 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6, 
+p  {
   hyphens: none;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  -moz-hyphens: none;
+  word-break      : normal;
+  border-collapse : collapse !important;
 }
 
 
 h3 {
   line-height: 1.8rem;
   letter-spacing: 1.5px;
+
 }
 
 p,
@@ -21,9 +27,6 @@ h6 {
   line-height: 1.4em;
   letter-spacing: 0px;
   font-family: 'Open Sans', Arial, sans-serif;
-  hyphens: none;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
 }
 
 h6 {
@@ -80,6 +83,14 @@ sup {
   font-size: 16px;
 }
 
+.font-size-18 {
+  font-size: 18px;
+}
+
+.table-font {
+  font-size: 14px;
+}
+
 
 // Buttons
 
@@ -133,16 +144,9 @@ table.button.rounded.small-rounded table td {
 // Colours
 
 p,
+h2,
 h6 {
   color: $secondary-color;
-}
-
-h2 {
-  color: $white;
-}
-
-h3 {
-  color: $primary-color
 }
 
 .primary-color {
@@ -248,6 +252,13 @@ th.columns {
   box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
+.no-margin {
+  margin: 0;
+  Margin: 0;
+  margin-bottom: 0;
+  Margin-bottom: 0;
+}
+
 sup {
   line-height: 0;
 }
@@ -311,15 +322,18 @@ table.button.expanded table a {
   }
 
   h2 {
-    font-size: 30px;
-    font-size: 30px !important;
-		letter-spacing: 0.5px !important;
+    font-size: 25px;
+    font-size: 25px !important;
+		letter-spacing: 0px;
+		letter-spacing: 0px !important;
+		line-height: 1.2;
+		line-height: 1.2 !important;
   }
 
   p {
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 1.5rem;
-		font-size: 20px !important;
+		font-size: 18px !important;
 		line-height: 1.5rem !important;
   }
 
@@ -343,6 +357,11 @@ table.button.expanded table a {
     line-height: 1.2em !important;
   }
 
+  .font-size-18 {
+    font-size: 18px;
+    font-size: 18px !important;
+  }
+
   // Button
 
   table.button table td a {
@@ -364,6 +383,16 @@ table.button.expanded table a {
   table.button.large table a {
     font-size: 22px;
     font-size: 22px !important;
+  }
+
+  .border-radius, .border-radius-bottom, .border-radius-top {
+    border-radius: 0px !important;
+    border-radius: 0px;
+  }
+
+  .table-font {
+    font-size: 14px !important;
+    line-height: 1.2em !important;
   }
 }
 //Expanded fix for outlook
