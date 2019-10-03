@@ -29,13 +29,13 @@ $white: #fefefe;
 $pre-color: #ff6908;
 $global-width: 600px;
 $global-width-small: 95%;
-$global-gutter: 40px;
-$body-background: #E5E5E5;
+$global-gutter: 45px;
+$body-background: #F0F0F0;
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
 $global-radius: 3px;
-$global-rounded: 500px;
+$global-rounded: 50px;
 $global-breakpoint: 380px;
 
 // 2. Grid
@@ -98,7 +98,7 @@ $button-padding: (
   tiny: 4px 8px 4px 8px,
   small: 5px 10px 5px 10px,
   default: 15px 20px 15px 20px,
-  large: 23px 84px 23px 84px
+  large: 20px 84px 20px 84px
 );
 $button-font-size: (
   tiny: 10px,
