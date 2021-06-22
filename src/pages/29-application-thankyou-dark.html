@@ -14,20 +14,30 @@ subject: Thank you for your application
     <!-- Preview Text End-->
     <!-- Header Logo Start -->
     <container>
-        <row>
-            <columns>
-                <spacer size="24"></spacer>
+
+                <spacer size-lg="0" size-sm="10"></spacer>
+                <div class="show-for-large">
                 <center>
                     <img src="https://f.hubspotusercontent30.net/hubfs/8837988/Wiseman%20eDM%20images/wiseman-logo-darkmode-1.png"
-                        width="204" alt="Wisemans Surf Lodge"
-                        style="width: 204px; font-family:'Playfair Display',  Georgia , serif; font-size: 20px; font-weight: 400; line-height: 1;">
+                        width="600" alt="Wisemans Surf Lodge"
+                        style="width: 600px; font-family:'Playfair Display',  Georgia , serif; font-size: 20px; font-weight: 400; line-height: 1;">
                 </center>
+            </div>
+            <div class="hide-for-large">
+                <center>
+                    <img src="https://f.hubspotusercontent30.net/hubfs/8837988/Wiseman%20eDM%20images/wiseman-logo-darkmode-mobile.png"
+                        width="625" alt="Wisemans Surf Lodge"
+                        style="width: 625px; font-family:'Playfair Display',  Georgia , serif; font-size: 20px; font-weight: 400; line-height: 1;">
+                </center>
+            </div>
                 <!-- <center>
             <img src="https://f.hubspotusercontent30.net/hubfs/8837988/Wiseman%20eDM%20images/wiseman-logo.png"
               width="150" alt="Wisemans Surf Lodge"
               style="width: 150px; font-family:'Playfair Display',  Georgia , serif; font-size: 20px; font-weight: 400; line-height: 1;">
           </center> -->
-                <spacer size="50"></spacer>
+          <row>
+            <columns>
+                <spacer size-lg="30" size-sm="35"></spacer>
                 <h2 class="text-center secondary-color">Thank you for your application</h2>
                 <spacer size="24"></spacer>
             </columns>
@@ -59,7 +69,7 @@ subject: Thank you for your application
       <columns>
         <table class="background-white">
           <tr>
-            <td style="width: 20px;">
+            <td class="margin-width">
             </td>
             <td>
               <spacer size="20"></spacer>
@@ -92,7 +102,7 @@ subject: Thank you for your application
     <p>In the meantime, if you have any questions, please do not hesitate to book a call with our
         Investment team.</p>
     <spacer size="30"></spacer>
-    {{>button url="#" copy="Speak with our Investment team"}}
+    {{>button url="http://www.hubspot.com" copy="Speak with our Investment team"}}
     {{>body-copy-end}}
     {{>spacer size='10'}}
 <!-- Footer Start -->
