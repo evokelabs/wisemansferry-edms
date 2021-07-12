@@ -1,43 +1,51 @@
- <!-- 2 Column Layout Photo Right Start -->
- <container>
-    <div class="show-for-large">
-      <table class="background-white" style="width: 100%">
-        <tr>
+<!-- 2 Column Layout Photo Right Start -->
+<container>
+  <div class="show-for-large">
+    <table class="background-white" style="width: 100%">
+      <tr>
+        <td style="width: 50%; vertical-align: middle;">
+          <table style="width: 100%">
+            <tr>
+              <td style="width: 20px"></td>
+              <td>
+                <spacer size="20"></spacer>
+                <h3>{{title}}</h3>
+                <p>{{{paragraph}}}</p>
+                <spacer size="20"></spacer>
+              </td>
+              <td style="width: 20px"></td>
+            </tr>
+          </table>
+        </td>
+        <td style="width: 50%;"><img src="{{img}}.png" width="300" style="width: 300px; display: inline;"></td>
+      </tr>
+    </table>
+  </div>
+</container>
+<container>
+  <row>
+    <columns>
+      <div class="hide-for-large">
+        <table class="background-white" style="width: 100%">
+          <tr>
+            <td style="text-align: center;"><img src="{{img}}-mob.png" style="display: inline-block;">
+            </td>
+          </tr>
+        </table>
+        <table class="background-white" style="width: 100%">
+          <tr>
+            <td>
+              <spacer size="30"></spacer>
+              <h3 class="text-center">{{title}}</h3>
+              <spacer size="5"></spacer>
+              <p>{{{paragraph}}}</p>
+              <spacer size="30"></spacer>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </columns>
+  </row>
+</container>
 
-          <td style="width: 20px;"></td>
-          <td style="width: auto; vertical-align: middle;">
-            <spacer size="20"></spacer>
-            <h2>{{title}}</h2>
-            <p>{{{paragraph}}}</p>
-            <spacer size="20"></spacer>
-          </td>
-          <td style="width: 30px;"></td>
-          <td style="width: 50%; text-align: right;"><img
-              src="{{img}}"
-              width="290" style="width: 290px; display: inline;"></td>
-        </tr>
-      </table>
-    </div>
-    <div class="hide-for-large">
-      <table class="background-white" style="width: 100%">
-        <tr>
-          <td><img
-              src="{{img}}">
-          </td>
-        </tr>
-      </table>
-      <table class="background-white" style="width: 100%">
-        <tr>
-          <td style="width: 20px;"></td>
-          <td>
-            <spacer size="30"></spacer>
-            <h2 class="small-text-center">{{title}}</h2>
-            <p class="small-text-center">{{{paragraph}}}</p>
-            <spacer size="30"></spacer>
-          </td>
-          <td style="width: 20px;"></td>
-        </tr>
-      </table>
-    </div>
-  </container>
-  <!-- 2 Column Layout Photo Right End -->
+<!-- 2 Column Layout Photo Right End -->
