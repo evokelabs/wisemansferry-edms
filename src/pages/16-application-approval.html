@@ -4,11 +4,11 @@ subject: Your application has been approved
 {{>header-preview-text}}
 {{>header-logo copy="Great news!"}}
 {{>image-header image-desktop-url="https://f.hubspotusercontent30.net/hubfs/8837988/Wiseman%20eDM%20images/wiseman-image-body-3.png" image-mobile-url="https://f.hubspotusercontent30.net/hubfs/8837988/Wiseman%20eDM%20images/wiseman-image-body-3-mob.png"}}
-{{>body-copy-start}}
+{{>body-copy-start-investor}}
 <p>Congratulations! Your application to invest in the Wisemans Surf Lodge Property Trust investment
     has been approved.</p>
 <spacer size="15"></spacer>
-<p>To complete your investment journey, please make a payment of \{{Indicative_Investment}} within the
+<p>To complete your investment journey, please make a payment of \{{contact.indicative_investment}} within the
     next three business days.</p>
 <spacer size="30"></spacer>
 <h3 class="text-center">How to make a payment</h3>
@@ -23,14 +23,13 @@ subject: Your application has been approved
 <p><span class="bold"> Make your payment to the following account:</span><br><br>
 Bank Name: Westpac<br>
 Account Name: Certane CT Pty Ltd ACF Wisemans Surf Lodge Property Trust<br>
-Account Number: 033-002<br>
-BSB: 103-995<br>
+BSB: 033-002<br>
+Account Number: 103-995<br>
 Reference: \{{contact.CRN_Application}}</p>
 <spacer size="40"></spacer>
 <p><span class="bold">Make a payment via BPay:</span><br><br>
 BPay Biller Code: 357962<br>
 Biller Name: Wisemans Surf Lodge<br>
-BSB: 103-995<br>
 Reference: \{{contact.CRN_Application}}</p>
 <spacer size="30"></spacer>
 <p>We will notify you by email once your funds have been received.</p>
